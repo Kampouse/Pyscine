@@ -1,26 +1,17 @@
-
 class Empty(object):
     def __eq__(self, other):
         return not other
 
 
-def NULL_not_found(object) -> bool:
+def NULL_not_found(object) -> int:
     stuff = Empty()
+
     if (object == stuff):
-        return True
+        return 0
     elif (isinstance(object, (float, int))):
         if (object > 0 or object < 0):
-            return False
+            return 0
         else:
-            return True
+            return 1
     else:
-        return False
-
-
-print(NULL_not_found(False))
-print(NULL_not_found(""))
-print(NULL_not_found([]))
-print(NULL_not_found({}))
-print(NULL_not_found(None))
-print(NULL_not_found(float("NaN")))
-print(NULL_not_found(float("25.5")))
+        return 1
