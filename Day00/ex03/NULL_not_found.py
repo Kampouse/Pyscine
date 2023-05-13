@@ -4,6 +4,7 @@ class Empty(object):
 
 
 def NULL_not_found(object) -> int:
+    """return if the value provided is a null or not"""
     stuff = Empty()
 
     if (object == stuff):

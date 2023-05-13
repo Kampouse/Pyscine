@@ -3,6 +3,8 @@ import numbers
 
 
 def is_int(value: str) -> bool:
+    """is a int or no  act like a aoit"""
+
     value = value.lstrip('-+')
     for content in value:
         if (not (content.isdigit())):
@@ -11,6 +13,7 @@ def is_int(value: str) -> bool:
 
 
 def ft_positivity(value: str) -> int:
+    """return if the thing is positif or not"""
     sign = '+'
     for content in value:
         if (content.isdigit()):
@@ -22,6 +25,7 @@ def ft_positivity(value: str) -> int:
 
 
 def init():
+    """the main function"""
     len = sys.argv.__len__()
     assert len != 1, "AssertionError: more than one argument are provided"
     assert is_int(sys.argv[1]), "AssertionError: The argument -> '" + \

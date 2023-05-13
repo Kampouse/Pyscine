@@ -3,6 +3,7 @@ import re
 
 
 def is_int(Str: str) -> bool:
+    """return if the thing is a int or not"""
     try:
         int(Str)
     except ValueError:
@@ -11,6 +12,7 @@ def is_int(Str: str) -> bool:
 
 
 def lst_of_valid_str(Str: str, len: int) -> list[str]:
+    """return a list of  string splitted on space characters"""
     lst = re.split('\t| | \r| \v', Str)
     return [elm for elm in lst if elm.__len__() > len]
 
