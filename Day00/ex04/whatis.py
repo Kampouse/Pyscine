@@ -23,7 +23,7 @@ def ft_positivity(value: str) -> int:
 
 def init():
     len = sys.argv.__len__()
-    assert len != 1, "AssertionError: more than one argument are provided" 
+    assert len != 1, "AssertionError: more than one argument are provided"
     assert is_int(sys.argv[1]), "AssertionError: The argument -> '" + \
         sys.argv[1] + "' is not a number"
     sign = ft_positivity(sys.argv[1])
@@ -32,7 +32,8 @@ def init():
     is_even = "Odd"
     if (not (actual_value % 2)):
         is_even = "Even"
-    print("I am " + str(actual_value) +  " and its " + is_even)
+    print("I am " + str(actual_value) + " and its " + is_even)
+
 
 try:
     init()
