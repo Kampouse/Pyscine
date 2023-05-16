@@ -43,6 +43,6 @@ def main():
     for key in mapping:
         print(str(mapping[key]) + " " + key, end="\n", sep="\n")
 
+
 if (__name__ == "__main__"):
     main()
-
